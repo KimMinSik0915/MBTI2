@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+	$(function () {
+		
+		var score = 0;
+		
+		var cnt = 0;
+		
+		var statA = false;
+		
+		var statB = false;
+		
+		if( statA == false ) {
+			
+			$("#selA").click(function () {
+				
+				statA = true;
+				
+				statB = false;
+				
+			});
+			
+			$("#selB").click(function () {
+				
+				statA = false;
+				
+				statB = true;
+				
+			});
+			
+		}
+		
+	});
+
+</script>
+<style type="text/css">
+
+	.answerBtnA {
+	
+		width: 150px;
+		height: 90px;
+		border: 1px solid black;
+		border-radius: 25px;
+		text-align: center;
+		position: fixed;
+		bottom: 700px; 
+		right: 715px; 
+	}
+	
+	.answerBtnB {
+	
+		width: 150px;
+		height: 90px;
+		border: 1px solid black;
+		border-radius: 25px;
+		text-align: center;
+		position: fixed;
+		bottom: 700px; 
+		right: 515px;  
+	}
+
+</style>
+</head>
+<body>
+
+ <div>
+  <form action="#">
+   <div>Q)~~~~~~~~~~</div>
+<!--    <div class="answerBtnA" id="selA">A)~~~~~~~~~~</div> -->
+<!--    <div class="answerBtnB" id="selB">B)~~~~~~~~~~</div> -->
+   <button type="button" class="answerBtnA" id="selA">A)~~~~~~~~</button>
+   <button type="button" class="answerBtnB" id="selB">B)~~~~~~~~</button>
+  </form>
+ </div>
+
+</body>
+</html>
