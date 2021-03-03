@@ -12,30 +12,16 @@
 		
 		var cnt = 0;
 		
-		var statA = false;
 		
 		var statB = false;
 		
-		if( statA == false ) {
+		$("#selA").click(function () {
 			
-			$("#selA").click(function () {
-				
-				statA = true;
-				
-				statB = false;
-				
-			});
 			
-			$("#selB").click(function () {
-				
-				statA = false;
-				
-				statB = true;
-				
-			});
+			alert(typeof (boolean)$("#selA").val());
 			
-		}
-		
+		});		
+			
 	});
 
 </script>
@@ -74,8 +60,9 @@
    <div>Q)~~~~~~~~~~</div>
 <!--    <div class="answerBtnA" id="selA">A)~~~~~~~~~~</div> -->
 <!--    <div class="answerBtnB" id="selB">B)~~~~~~~~~~</div> -->
-   <button type="button" class="answerBtnA" id="selA">A)~~~~~~~~</button>
-   <button type="button" class="answerBtnB" id="selB">B)~~~~~~~~</button>
+   <button type="button" class="answerBtnA" id="selA" value="false">A)~~~~~~~~</button>
+   <button type="button" class="answerBtnB" id="selB" value="false">B)~~~~~~~~</button>
+   <button id="test"> test </button>
   </form>
  </div>
 
